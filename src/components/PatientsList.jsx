@@ -3,14 +3,11 @@ import Patient from './Patient';
 export default function PatientsList({ patients, setPatient, deletePatient }){
 
     return(
-        <div className='md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll'>
+        <div className='mx-4'>
         {patients && patients.length ?
         <>
-            <h2 className='font-black text-3xl text-center'>Patients list</h2> 
-            <p className='text-lg my-2 text-center'>
-                Manage your
-                <span className='text-indigo-600 font-bold'> patients & appointments</span>
-            </p>
+            <h2 className='text-gunmetal font-black text-xl text-start'>Patients list</h2>
+            <div className='text-bone-dark text-sm mb-5 -mt-1 text-start'>Manage your patients & appointments</div>
             {patients && patients.map((patient) => (
                 <Patient 
                 key={patient.id} 
@@ -20,18 +17,11 @@ export default function PatientsList({ patients, setPatient, deletePatient }){
                 />
             ))}
         </>
-
         :
-
         <>
-            <h2 className='font-black text-3xl text-center'>No patients to show</h2> 
-            <p className='text-lg my-2 text-center'>
-                Start adding patients and they will appear
-                <span className='text-indigo-600 font-bold'> here</span>
-            </p>
-
+            <h2 className='text-gunmetal font-black text-xl text-start'>No patients to show</h2>
+            <p className='text-bone-dark text-sm mb-5 -mt-1 text-start'>Start adding patients and they will appear here</p>
         </>
-
         }
         </div>
     )

@@ -17,10 +17,9 @@ export default function App() {
   }, [patients]);
 
   return (
-    <div className='container my-10 mx-auto'>
+    <div>
       <Header />
-      <div className='mt-5 md:flex'>
-
+      <div className='flex flex-col gap-5'>
         <Form 
         patients={patients}
         setPatients={setPatients}
@@ -32,7 +31,6 @@ export default function App() {
         setPatient={setPatient}
         deletePatient={deletePatient}
         />
-
       </div>
     </div>
   )

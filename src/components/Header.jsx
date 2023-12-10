@@ -1,9 +1,7 @@
 export default function Header() {
     return(
-        <header>
-            <h1 className='font-black text-5xl text-start mx-auto md:w-2/3'>
-                Veterinary clinic <span className='text-indigo-600'>monitoring</span>
-            </h1>
+        <header className='p-5 bg-gunmetal'>
+            <h1 className='text-bone font-black text-2xl text-center md:w-2/3 md:text-start'>Veterinary monitoring</h1>
         </header>
     )
 }

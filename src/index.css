@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    min-height: screen;
+    background-color: #F2EBE3;
+}
+
+details summary {
+    cursor: pointer;
+    transition: margin 200ms ease-in-out;
+  }
+  
+  details[open] summary {
+    margin-bottom: 10px;
+  }
